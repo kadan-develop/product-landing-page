@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* overflow: hidden; */
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 0 5px 0;
+}
+
+h3 {
+  font-size: 45px;
+  padding-top: 3rem;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#main-content-img {
+  content: "";
+  background: url("../images/jan-muehlbach-sTa-fO_VM4k-unsplash.jpg") no-repeat
+    center center/cover;
+  position: relative;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100vw;
+  height: 100vh;
+}
+
+#header {
+  background-color: rgba(71, 77, 44, 0.49);
+  display: flex;
+  width: 100%;
+  height: 61px;
+  justify-content: space-between;
+  position: fixed;
+}
+
+#header-img {
+  margin: 10px;
+  padding-left: 12.5rem;
+}
+
+ul {
+  display: flex;
+  margin: 15px;
+  padding-right: 10rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-link {
+  padding-right: 2rem;
+  text-decoration: none;
+  color: #f3f6c8;
+  font-size: 20px;
+}
+
+#underline {
+  border-bottom: 3px solid #b9810f;
+}
+
+#main-page {
+  position: relative;
+  display: grid;
+  text-align: center;
+  grid-template-columns: 30%;
+  top: 36%;
+  left: 10.8%;
+  color: #fff;
+  line-height: 1.2;
+}
+
+#main-page p {
+  display: grid;
+  grid-template-columns: 120%;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#title {
+  font-size: 51px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* PLACE CARDS */
+
+#items {
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.items-together {
+  display: grid;
+  /* grid-template-columns: 2fr 2fr 2fr; */
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bike-1,
+.bike-2,
+.bike-3 {
+  text-align: center;
+  background-color: #fff;
+  width: 392px;
+  height: 402px;
+}
+
+.bike-1 {
+  margin: 5rem 0 0 34.5%;
+}
+
+.bike-2 {
+  margin: 5rem auto;
+}
+
+.bike-3 {
+  margin: 5rem 0 0 2rem;
+}
+
+.sizing-e {
+  width: 90%;
+}
+
+.sizing {
+  width: 100%;
+}
+
+/* Buttons */
+
+.buttons {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-style: none;
+  background-color: #beb02e;
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 6px 25px;
+  cursor: pointer;
+}
+
+#about-us {
+  text-align: center;
+}
+
+#connect {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+#stay-in-touch {
+  margin: 2.5rem 13%;
+  line-height: 1.45;
+}
+
+#stay-in-touch p {
+  font-size: 19px;
+  font-weight: 600;
+  opacity: 60%;
+}
+
+.email-form {
+  margin: auto 10%;
+  display: flex;
+}
+
+#email {
+  padding: 10px 15rem 10px 20px;
+  border-radius: 6px;
+  border-style: none;
+  outline: none;
+}
+
+::placeholder {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+#submit {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 15px;
+  padding: 7px 20px;
+  border-style: none;
+  border-radius: 6px;
+  background-color: #f3f6c8;
+  cursor: pointer;
+}
+
+.padding-for-connect {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 414px) {
+  h3 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  #main-content-img {
+    height: 50vh;
+  }
+
+  #header {
+    width: auto;
+  }
+
+  #header-img {
+    width: 65%;
+    padding-top: 4px;
+    padding-left: 2px;
+  }
+
+  .nav-link {
+    font-size: 17px;
+    padding: 0 12px 0 0;
+  }
+
+  ul {
+    margin: 20px auto;
+  }
+
+  #underline {
+    border: none;
+  }
+
+  #main-page {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    top: 30%;
+    left: 3%;
+  }
+
+  #main-page p {
+    text-align: left;
+    width: 70%;
+    padding-top: 10px;
+  }
+
+  #title {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .items-together {
+    display: block;
+  }
+
+  .bike-1,
+  .bike-2,
+  .bike-3 {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .buttons {
+    margin: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  #connect {
+    text-align: center;
+    display: block !important;
+    margin-top: 10px !important;
+  }
+
+  #stay-in-touch {
+    margin: 0 !important;
+  }
+
+  #stay-in-touch p {
+    font-size: 16px !important;
+  }
+  .email-form {
+    display: block !important;
+    margin: 5px !important;
+  }
+
+  #email {
+    padding: 12px 5rem 10px 20px !important;
+  }
+
+  ::placeholder {
+    font-size: 15px !important;
+  }
+
+  .padding-for-connect {
+    padding-top: 15px !important;
+  }
+
+  #submit {
+    font-size: 20px !important;
+  }
+}
